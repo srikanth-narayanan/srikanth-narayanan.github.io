@@ -241,12 +241,12 @@ form {
 /* GENERAL ELEMENT TYPE STYLES */
 
 h1 {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 h2 {
   margin-bottom: 8px;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   color: #303030;
 }
