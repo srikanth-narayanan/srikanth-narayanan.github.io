@@ -46,7 +46,7 @@ table {
 	border-collapse: collapse;
 }
 /*Twitter widget definition */
-iframe[id^='twitter-widget-']{ width:100% !important;}
+#twitter-widget-0 {width: 100%;}
 
 /* LAYOUT STYLES */
 body {
