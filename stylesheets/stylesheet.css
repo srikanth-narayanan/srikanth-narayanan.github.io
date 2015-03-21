@@ -49,13 +49,23 @@ table {
 #twitter-widget-0 {width: 100%;}
 
 /* LAYOUT STYLES */
-body {
+ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 1em;
   line-height: 1.5;
   color: #6d6d6d;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-  background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
+  background: transparent;
+  #background: #e7e7e7 url(../images/body-bg.png);
+}
+
+/* https://css-tricks.com/perfect-full-page-background-image/ */
+html { 
+  background: url(../images/my_bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 a {
@@ -88,7 +98,7 @@ header h2 {
 
 #container {
   min-height: 595px;
-  background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
+  #background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
 }
 
 .inner {
@@ -99,6 +109,17 @@ header h2 {
 #container .inner img {
   max-width: 100%;
 }
+
+
+#share-buttons img {
+width: 7.5%;
+padding: 30px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
+ 
+</style>
 
 #downloads {
   margin-bottom: 40px;
@@ -279,6 +300,7 @@ h6 {
 p {
   margin-bottom: 20px;
   font-weight: 300;
+  color: #FFFFFF
 }
 
 a {
