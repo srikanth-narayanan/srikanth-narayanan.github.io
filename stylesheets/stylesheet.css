@@ -12,7 +12,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, footer, header, hgroup, aside,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	padding: 0;
@@ -75,11 +75,6 @@ a:hover {
   color: #c5000c;
 }
 
-header {
-  padding-top: 35px;
-  padding-bottom: 25px;
-}
-
 header h1 {
   font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 40px; font-weight: 800;
@@ -96,20 +91,36 @@ header h2 {
   letter-spacing: -1px;
 }
 
+body {
+  min-width: 550px;      /* 2x LC width + RC width */
+}
 #container {
-  min-height: 595px;
-  #background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
+  padding-left: 150px;   /* LC width */
+  padding-right: 350px;  /* RC width */
 }
-
-.inner {
-  width: 620px;
-  margin: 0 auto;
+#container .column {
+  position: relative;
+  float: left;
 }
-
-#container .inner img {
-  max-width: 100%;
+#center {
+  width: 100%;
 }
-
+#left {
+  width: 150px;          /* LC width */
+  right: 150px;          /* LC width */
+  margin-left: -100%;
+}
+#right {
+  width: 320px;          /* RC width */
+  margin-right: -350px;  /* RC width */
+}
+#footer {
+  clear: both;
+}
+/*** IE6 Fix ***/
+* html #left {
+  left: 150px;           /* RC width */
+}
 
 #share-buttons img {
 width: 7.5%;
@@ -278,7 +289,7 @@ h3 {
   margin-bottom: 8px;
   font-size: 18px;
   font-weight: bold;
-  color: #d5000d;
+  color: #D70000;
 }
 
 h4 {
