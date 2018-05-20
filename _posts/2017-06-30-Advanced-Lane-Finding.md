@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Advanced Lane Finding
-subtitle: Lane finding project using Open CV
+subtitle: Lane finding project using Open CV (Self Driving Car)
 ---
 [//]: # (Image References)
 
@@ -40,7 +40,7 @@ Open CV image read function reads images in the RGB colour space as BGR numpy ar
 
 The code lines are found in cells 2, 3, 4, 5, 6 and 7. Object points that represent the (x, y, z) co-ordinates in the real world, with z axis contains 0 length. The image points contains the array of detected corners.
 
-![Chessboard Corners](https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/blob/master/output_images/camera_calib.png)
+![Chessboard Corners][image9]
 
 ### Undistort Image
 
