@@ -2,4 +2,4 @@
 
 This page is built using Beautiful Jekyll Theme.
 
-Special thanks to Dean Attali[Dean Attali](http://deanattali.com)*
+Special thanks to [Dean Attali](http://deanattali.com)*
