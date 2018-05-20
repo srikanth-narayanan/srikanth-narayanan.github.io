@@ -5,14 +5,14 @@ subtitle: Lane finding project using Open CV
 ---
 [//]: # (Image References)
 
-[image1]: https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/output_images/UNDIST_Image.png "Undistorted Image"
-[image2]: https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/output_images/PERSPECTIVE_image.png "Perspective Transform"
-[image3]: https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/output_images/L_CHANNEL_binary.png "L_CHANNEL_binary"
-[image4]: https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/output_images/B_CHANNEL_binary.png "B_CHANNEL_binary"
-[image5]: https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/output_images/COMBI_CHANNEL_binary.png "Combined Binary"
-[image6]: https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/output_images/WINDOW_poly.png "Polynomial Fit"
-[image7]: https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/output_images/DETECTED.png "Detected Lanes, Curvature and Vehicle Position"
-[image9]: https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/output_images/camera_calib.png "Camera Calibration"
+[image1]: https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/blob/master/output_images/UNDIST_Image.png "Undistorted Image"
+[image2]: https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/blob/master/output_images/PERSPECTIVE_image.png "Perspective Transform"
+[image3]: https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/blob/master/output_images/L_CHANNEL_binary.png "L_CHANNEL_binary"
+[image4]: https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/blob/master/output_images/B_CHANNEL_binary.png "B_CHANNEL_binary"
+[image5]: https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/blob/master/output_images/COMBI_CHANNEL_binary.png "Combined Binary"
+[image6]: https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/blob/master/output_images/WINDOW_poly.png "Polynomial Fit"
+[image7]: https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/blob/master/output_images/DETECTED.png "Detected Lanes, Curvature and Vehicle Position"
+[image9]: https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/blob/master/output_images/camera_calib.png "Camera Calibration"
 
 ## Advanced Lane Finding Project
 
@@ -40,7 +40,7 @@ Open CV image read function reads images in the RGB colour space as BGR numpy ar
 
 The code lines are found in cells 2, 3, 4, 5, 6 and 7. Object points that represent the (x, y, z) co-ordinates in the real world, with z axis contains 0 length. The image points contains the array of detected corners.
 
-![Chessboard Corners](https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/output_images/camera_calib.png)
+![Chessboard Corners](https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/blob/master/output_images/camera_calib.png)
 
 ### Undistort Image
 
@@ -117,7 +117,7 @@ Here's a [link to my video result](./project_video_out.mp4)
 
  |						   Lane Detection with Curavture and Vehicle Position                            |
  |:-----------------------------------------------------------------------------------------------------:|
- |[![Lane Detection](https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/output_images/image4youtubelink.png)](https://www.youtube.com/watch?v=yVvluFzy8yU)|
+ |[![Lane Detection](https://github.com/srikanth-narayanan/CarND-Advanced-Lane-Lines/blob/master/output_images/image4youtubelink.png)](https://www.youtube.com/watch?v=yVvluFzy8yU)|
  |                       [Youtube Link](https://www.youtube.com/watch?v=yVvluFzy8yU)                     |
 
 
