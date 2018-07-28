@@ -33,7 +33,7 @@ The goals / steps of this project are the following:
 - Estimate a bounding box for the vehicles detected.
 - Reduce the false positives in the identification.
 
-![Lane Detection](https://github.com/srikanth-narayanan/CarND-Vehicle-Detection/blob/master/output_images/DetectVehicle.gif)
+![Lane Detection](../img/DetectVehicle.gif)
 
 
 ### Explore the dataset
