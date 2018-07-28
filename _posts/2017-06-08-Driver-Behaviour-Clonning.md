@@ -8,13 +8,13 @@ subtitle: Using DNN to perform driver behavioral cloning (Self Driving Car)
 
 [//]: # (Image References)
 
-[image1]: ./images/noflip.png "noflip"
-[image2]: ./images/clr.png "YUV image"
-[image3]: ./images/crop.png "Crop Image"
-[image4]: ./images/flip.png "flip Image"
-[image5]: ./images/normal.png "normal Image"
-[image6]: ./images/resized.png "resized Image"
-[image7]: ./images/recovery.gif "recovery Image"
+[image1]: ../img/noflip.png "noflip"
+[image2]: ../img/clr.png "YUV image"
+[image3]: ../img/crop.png "Crop Image"
+[image4]: ../img/flip.png "flip Image"
+[image5]: ../img/normal.png "normal Image"
+[image6]: ../img/resized.png "resized Image"
+[image7]: ../img/recovery.gif "recovery Image"
 
 The Behaviour cloning project involves in training a convolution neural network architecure to learn a driver behaviour and reproduce the behaviour to autonomously navigate a trained path.
 
@@ -42,13 +42,13 @@ python drive.py model.h5
 
 |										Autonomous Drive Video					       |
 |:------------------------------------------------------------------------------------:|
-|[![Test Track](./images/Track.png)](https://www.youtube.com/watch?v=uAmqHHTDNF8&t=28s)|
+|[![Test Track](../img/Track.png)](https://www.youtube.com/watch?v=uAmqHHTDNF8&t=28s)|
 |[[Youtube Link](https://www.youtube.com/watch?v=uAmqHHTDNF8&t=28s)|
 
 
 ## Model Architecture and Training Strategy
 
-The implementation is based on the [NVIDIA model](https://devblogs.nvidia.com/parallelforall/deep-learning-self-driving-cars/). 
+The implementation is based on the [NVIDIA model](https://devblogs.nvidia.com/parallelforall/deep-learning-self-driving-cars/).
 
 The architecture seems to be proven for this project. The architecture is based on several layers of convolution network followed by several fully connected layers.
 
@@ -66,15 +66,15 @@ The following additions are made to adapt the model to this project.
 |Convolution 		 | Filter 48, Kernel (5 x 5), Stride (2 x 2) , "elu"|
 |Convolution 		 | Filter 64, Kernel (3 x 3), Stride (2 x 2) , "elu"|
 |Convolution 		 | Filter 64, Kernel (3 x 3), Stride (2 x 2) , "elu"|
-|Dropout 		 	 | 0.5					 |	
-|Flatten 		 	 | 1164, "relu"			 | 
-|Dense  		 	 | 100, "relu"			 | 
+|Dropout 		 	 | 0.5					 |
+|Flatten 		 	 | 1164, "relu"			 |
+|Dense  		 	 | 100, "relu"			 |
 |Dense  		 	 | 50, "relu"			 |
 |Dense  		 	 | 10, "relu"			 |
 |Dense  		 	 | 1 			 		 |
 
 
-The model uses RELU functions in the dense layer and ELU function in the convolution layer to introduce non-linearity in the layers. 
+The model uses RELU functions in the dense layer and ELU function in the convolution layer to introduce non-linearity in the layers.
 
 ### Model parameter tuning
 
@@ -112,11 +112,10 @@ I added the additional augumentation for increased training scenarios for the mo
 
 - Introduction of left and right camera data provide a better perspective for the model in recovery scenarios. This is supported by a steering offset of 0.2.
 
-![Recovery Right](https://github.com/srikanth-narayanan/Udacity-Self-Driving-Car/blob/master/Term-1/CarND-Behavioral-Cloning-P3/images/recovery.gif)
+![Recovery Right](../img/recovery.gif)
 
 The model was trained with the following settings,
 - EPOCHS - 5.
 - BATCH SIZE - 64.
 
 The car was able to drive the track autonomously without leaving the track using new model trained with improved training set and image augmentation.
-

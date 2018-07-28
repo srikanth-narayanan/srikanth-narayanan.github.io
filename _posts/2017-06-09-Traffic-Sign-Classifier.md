@@ -5,22 +5,22 @@ subtitle: Traffic Sign classifier using convolutional neural network
 ---
 
 [//]: # (Image References)
-[image0]: ./examples/Intro.png "Introduction"
-[image1]: ./examples/lenet.png "LeNet"
-[image2]: ./examples/bar_chart_train_dataset.png "Train Distribution Set"
-[rslt_stop]: ./examples/result_stop.png "Result Probability Stop Sign"
-[rslt_priority]: ./examples/result_priority_road.png "Result Probability Priority Road"
-[rslt_50kph]: ./examples/results_50kph.png "Result Probability Speed Limit 50kph"
-[rslt_roadwork]: ./examples/results_road_Work.png "Result Probability Road Work"
-[rslt_General_Caut]: ./examples/result_generalcaution.png "Result Probability General Caution"
-[Grayscale]: ./examples/grayscale.png "Grayscale"
-[HSV]: ./examples/HSV.png "HSV"
-[YUV]: ./examples/YUV.png "YUV"
-[Rotate]: ./examples/Rotate.png "Rotate"
-[Enhance]: ./examples/Enhance.png "Enhance"
-[Translate]: ./examples/Translate.png "Translate"
-[test_image]: ./examples/augumented_test_image.png "Augmented Image"
-[augment]: ./examples/augument.png "Augment"
+[image0]: ../img/Intro.png "Introduction"
+[image1]: ../img/lenet.png "LeNet"
+[image2]: ../img/bar_chart_train_dataset.png "Train Distribution Set"
+[rslt_stop]: ../img/result_stop.png "Result Probability Stop Sign"
+[rslt_priority]: ../img/result_priority_road.png "Result Probability Priority Road"
+[rslt_50kph]: ../img/results_50kph.png "Result Probability Speed Limit 50kph"
+[rslt_roadwork]: ../img/results_road_Work.png "Result Probability Road Work"
+[rslt_General_Caut]: ../img/result_generalcaution.png "Result Probability General Caution"
+[Grayscale]: ../img/grayscale.png "Grayscale"
+[HSV]: ../img/HSV.png "HSV"
+[YUV]: ../img/YUV.png "YUV"
+[Rotate]: ../img/Rotate.png "Rotate"
+[Enhance]: ../img/Enhance.png "Enhance"
+[Translate]: ../img/Translate.png "Translate"
+[test_image]: ../img/augumented_test_image.png "Augmented Image"
+[augment]: ../img/augument.png "Augment"
 
 
 # Traffic Sign Recognition

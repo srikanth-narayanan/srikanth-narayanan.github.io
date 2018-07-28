@@ -6,19 +6,19 @@ subtitle: Vehicle detection using forward facing camera. (CNN)
 
 
 [//]: # (Image References)
-[image1]: ./output_images/draw_rectangles.png
-[image3]: ./output_images/sampleset.png
-[image4]: ./output_images/HOG_Vehicle.png
-[image5]: ./output_images/HOG_nonvehicle.png
-[image6]: ./output_images/feataure_scaling.png
-[image7]: ./output_images/confusionmatrix.png
-[image8]: ./output_images/slidingwindow.png
-[image9]: ./output_images/FalsePositive.png
-[image10]: ./output_images/test1.png
-[image11]: ./output_images/test2.png
-[image12]: ./output_images/test3.png
-[image13]: ./output_images/DetectVehicle.png
-[video1]: ./project_video.mp4
+[image1]: ../img/draw_rectangles.png
+[image3]: ../img/sampleset.png
+[image4]: ../img/HOG_Vehicle.png
+[image5]: ../img/HOG_nonvehicle.png
+[image6]: ../img/feataure_scaling.png
+[image7]: ../img/confusionmatrix.png
+[image8]: ../img/slidingwindow.png
+[image9]: ../img/FalsePositive.png
+[image10]: ../img/test1.png
+[image11]: ../img/test2.png
+[image12]: ../img/test3.png
+[image13]: ../img/DetectVehicle.png
+[video1]: https://github.com/srikanth-narayanan/CarND-Vehicle-Detection/blob/master/project_video_out.mp4
 
 # Vehicle Detection
 

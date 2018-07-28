@@ -7,7 +7,7 @@ subtitle: Path planning of the self driving car in highway traffic
 
 [//]: # (Image References)
 
-[image1]: ./data/Distance_Image.png "Distance Image"
+[image1]: ../img/Distance_Image.png "Distance Image"
 
 # CarND-Path-Planning-Project
 

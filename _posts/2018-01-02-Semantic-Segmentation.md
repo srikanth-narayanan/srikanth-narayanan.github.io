@@ -10,7 +10,7 @@ subtitle: Identification of free road space using Semantic Segmentation.
 In this project a Fully Convolution Network is built based on the VGG 16 architecture used for image classification and it is trained on [Kitti Road dataset](http://www.cvlibs.net/download.php?file=data_road.zip). This is used to perform sematic segmentation to identify road surface from the test set.
 
 ### Architecture
-The [VGG 16](https://github.com/srikanth-narayanan/CarND-Semantic-Segmentation/blob/master/Graph_VGG_16.png) architecture is originally used for image classification. This architecure consists of 5 convolution layer and 2 fully connected layer.
+The [VGG 16](../img/Graph_VGG_16.png) architecture is originally used for image classification. This architecure consists of 5 convolution layer and 2 fully connected layer.
 - The final fully connected layer is converted to 1x1 convolution by setting the depth equal to number of classes, which is road or not a road in this use case. This layer is upsampled to represent the original image size.
 - In order to maintain / preserve the feature information skip connections are used. The skip connection 1 carries information from the 4th convolution layer of the VGG 16 architecture. This is converted to a 1x1 convolution layer and element wise addtion is performed with upsampled 1x1 convolution layer to form skip connection.
 - The resultant is upsampled and skip connection is repeated with 3rd convolution layer to preserve more feature information.
@@ -36,17 +36,17 @@ The network performed overall well in training and test. The average loss per ba
 
 The following are some of the samples of the result, but there are scenrios where the results could be improved.
 
-![Sample 1](https://github.com/srikanth-narayanan/CarND-Semantic-Segmentation/blob/master/runs/Sample_Outputs/um_000013.png)
+![Sample 1](../img/um_000013.png)
 
-![Sample 2](https://github.com/srikanth-narayanan/CarND-Semantic-Segmentation/blob/master/runs/Sample_Outputs/um_000014.png)
+![Sample 2](../img/um_000014.png)
 
-![Sample 3](https://github.com/srikanth-narayanan/CarND-Semantic-Segmentation/blob/master/runs/Sample_Outputs/um_000027.png)
+![Sample 3](../img/um_000027.png)
 
-![Sample 4](https://github.com/srikanth-narayanan/CarND-Semantic-Segmentation/blob/master/runs/Sample_Outputs/um_000066.png)
+![Sample 4](../img/um_000066.png)
 
-![Sample 5](https://github.com/srikanth-narayanan/CarND-Semantic-Segmentation/blob/master/runs/Sample_Outputs/um_000077.png)
+![Sample 5](../img/um_000077.png)
 
-![Sample 6](https://github.com/srikanth-narayanan/CarND-Semantic-Segmentation/blob/master/runs/Sample_Outputs/uu_000021.png)
+![Sample 6](../img/uu_000021.png)
 
 ### Setup
 ##### Frameworks and Packages
