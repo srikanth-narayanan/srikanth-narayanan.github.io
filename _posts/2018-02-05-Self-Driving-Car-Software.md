@@ -19,7 +19,7 @@ This is the project repo for the final project of the Udacity Self-Driving Car N
 
 ## Architecture
 
-[![Vehicle Architecture]]({{ site.url }}https://github.com/srikanth-narayanan/CarND-Capstone/blob/master/imgs/final-project-ros-graph-v2.png)]
+[![Vehicle Architecture]({{ site.url }}https://github.com/srikanth-narayanan/CarND-Capstone/blob/master/imgs/final-project-ros-graph-v2.png)]({{ site.url }}https://github.com/srikanth-narayanan/CarND-Capstone/blob/master/imgs/final-project-ros-graph-v2.png)
 
 ![Vehicle Architecture](https://github.com/srikanth-narayanan/CarND-Capstone/blob/master/imgs/final-project-ros-graph-v2.png)
 
