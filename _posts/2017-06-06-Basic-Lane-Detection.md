@@ -21,27 +21,27 @@ The pipeline development consists of the following steps.
 - Identify the region of interest and mask other regions
 - Use Hough transform to identify the lines.
 - Perform average function to determine the co-ordinates of the lanes
-- Extrapolate the co-oridinates to draw the lane
+- Extrapolate the co-ordinates to draw the lane
 
-The images recorded by the camera are of dimensions 960 x 540. The images are imported as an array of RGB colourspace. The images are converted to grayscale images. This helps in better identification of lanes, since the Canny edge detection works by identifying the gradient change in the pixels
+The images recorded by the camera are of dimensions 960 x 540. The images are imported as an array of RGB colorspace. The images are converted to grayscale images. This helps in better identification of lanes, since the Canny edge detection works by identifying the gradient change in the pixels
 
-![](./img/solidWhiteCurveGrayScale_Rescaled.png)
+![](../img/solidWhiteCurveGrayScale_Rescaled.png)
 
 
 In order for canny edge detect to identify the changes in gradient the edges of the lanes have to be smooth. This can be achieved by applying Gaussian filter. The kernel setting can be tuned and I found the value of 15 to be optimal.
 
-![](./img/solidWhiteRightGau_Smooth_Rescaled.png)
+![](../img/solidWhiteRightGau_Smooth_Rescaled.png)
 
 
 Canny Edge detection helps in identifying the image edges defined and tuned by the threshold parameters.
-One can play around with threshold parameters. General advice is to use a ratio of 1:3 for the low to high threhold. I found the values of 50 and 150 seems to work very well for this image and video usecase.
+One can play around with threshold parameters. General advice is to use a ratio of 1:3 for the low to high threshold. I found the values of 50 and 150 seems to work very well for this image and video usecase.
 
-![](./img/solidYellowCurve2Canny_Rescaled.png)
+![](../img/solidYellowCurve2Canny_Rescaled.png)
 
 
 The canny edge detected image contains other edges that had to be removed. The region of interest could be applied over the image. The region of interest could be a polygon that cover just right area to capture the potential lane areas.
 
-![](./img/solidWhiteCurveMasked_Rescaled.png)
+![](../img/solidWhiteCurveMasked_Rescaled.png)
 
 
 Using Hough transform on the edge detected images, all the potential vertices of the lines can be calculated. In order to get better detection, tuning of parameters is essential. The following parameters are the final set that produced a reasonable output both for the images and videos.
@@ -59,13 +59,13 @@ min_lin_length = 20
 max_line_gap = 300
 ```
 
-The output of hough transform is an array of line vertices. In order to draw a continous single lane, the array of lines has to be processed to classify in to lines that belong to left lane and right lanes. By calculating the slope and intercept of the line the classification of lines can be accomplished.
+The output of hough transform is an array of line vertices. In order to draw a continuous single lane, the array of lines has to be processed to classify in to lines that belong to left lane and right lanes. By calculating the slope and intercept of the line the classification of lines can be accomplished.
 
 By applying different weights for different lengths of the line an average slope and intercept for the left and right lane is calculated.
 
 By using approximate y co-ordinates the vertices of left and right lane are determined. These lines are draw over the original image as detected in lanes.
 
-![](./img/solidYellowCurve2Continuous_Detected_Rescaled.png)
+![](../img/solidYellowCurve2Continuous_Detected_Rescaled.png)
 
 While processing the video, compensation of the lane moment oscillation and small curvatures are handled by averaging the lanes with previous vertices.
 
@@ -83,7 +83,7 @@ The following are the shortcomings with the current pipeline
 
 ### Possible improvements to the pipeline
 
-This method is the fundamental and first approach to lane detection. It could be extended to work for serveral other scenarios.
+This method is the fundamental and first approach to lane detection. It could be extended to work for several other scenarios.
 
 The following are the possible improvements to the pipeline.
 
