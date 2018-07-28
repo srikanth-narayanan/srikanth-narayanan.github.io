@@ -5,14 +5,14 @@ subtitle: Lane finding project using Open CV (Self Driving Car)
 ---
 [//]: # (Image References)
 
-[image1]: ../imgUNDIST_Image.png "Undistorted Image"
-[image2]: ../imgPERSPECTIVE_image.png "Perspective Transform"
-[image3]: ../imgL_CHANNEL_binary.png "L_CHANNEL_binary"
-[image4]: ../imgB_CHANNEL_binary.png "B_CHANNEL_binary"
-[image5]: ../imgCOMBI_CHANNEL_binary.png "Combined Binary"
-[image6]: ../imgWINDOW_poly.png "Polynomial Fit"
-[image7]: ../imgDETECTED.png "Detected Lanes, Curvature and Vehicle Position"
-[image9]: ../imgcamera_calib.png "Camera Calibration"
+[image1]: ../img/UNDIST_Image.png "Undistorted Image"
+[image2]: ../img/PERSPECTIVE_image.png "Perspective Transform"
+[image3]: ../img/L_CHANNEL_binary.png "L_CHANNEL_binary"
+[image4]: ../img/B_CHANNEL_binary.png "B_CHANNEL_binary"
+[image5]: ../img/COMBI_CHANNEL_binary.png "Combined Binary"
+[image6]: ../img/WINDOW_poly.png "Polynomial Fit"
+[image7]: ../img/DETECTED.png "Detected Lanes, Curvature and Vehicle Position"
+[image9]: ../img/camera_calib.png "Camera Calibration"
 
 ## Advanced Lane Finding Project
 
@@ -27,7 +27,7 @@ This project involves building a image processing pipeline to detect road lanes 
 - Warp the detected lane boundaries back onto the original image.
 - Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
 
-![Lane Detection](../imgLANE.gif)
+![Lane Detection](../img/LANE.gif)
 
 
 ## Organisation of the code
@@ -117,7 +117,7 @@ Here's a [link to my video result](./project_video_out.mp4)
 
  |						   Lane Detection with Curavture and Vehicle Position                            |
  |:-----------------------------------------------------------------------------------------------------:|
- |[![Lane Detection](../imgimage4youtubelink.png)](https://www.youtube.com/watch?v=yVvluFzy8yU)|
+ |[![Lane Detection](../img/image4youtubelink.png)](https://www.youtube.com/watch?v=yVvluFzy8yU)|
  |                       [Youtube Link](https://www.youtube.com/watch?v=yVvluFzy8yU)                     |
 
 
