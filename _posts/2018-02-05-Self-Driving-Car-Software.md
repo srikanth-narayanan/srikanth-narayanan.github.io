@@ -3,7 +3,7 @@ layout: post
 title: Software for Self Driving Car
 subtitle: Software integration using ROS and DNN
 ---
-# System Integeration on Carla
+# System Integration on Carla
 
 This is the project repo for the final project of the Udacity Self-Driving Car Nanodegree: Programming a Real Self-Driving Car.
 
@@ -18,6 +18,8 @@ This is the project repo for the final project of the Udacity Self-Driving Car N
 | Anthony Allison                         | anthony.w.allison@gmail.com       |
 
 ## Architecture
+
+[![Vehicle Architecture]]({{ site.url }}https://github.com/srikanth-narayanan/CarND-Capstone/blob/master/imgs/final-project-ros-graph-v2.png)]
 
 ![Vehicle Architecture](https://github.com/srikanth-narayanan/CarND-Capstone/blob/master/imgs/final-project-ros-graph-v2.png)
 
@@ -91,7 +93,7 @@ roslaunch launch/styx.launch
 4. Run the simulator
 
 ### Real world testing
-1. Download [training bag](https://drive.google.com/file/d/0B2_h37bMVw3iYkdJTlRSUlJIamM/view?usp=sharing) that was recorded on the Udacity self-driving car (a bag demonstraing the correct predictions in autonomous mode can be found [here](https://drive.google.com/open?id=0B2_h37bMVw3iT0ZEdlF4N01QbHc))
+1. Download [training bag](https://drive.google.com/file/d/0B2_h37bMVw3iYkdJTlRSUlJIamM/view?usp=sharing) that was recorded on the Udacity self-driving car (a bag demonstrating the correct predictions in autonomous mode can be found [here](https://drive.google.com/open?id=0B2_h37bMVw3iT0ZEdlF4N01QbHc))
 2. Unzip the file
 ```bash
 unzip traffic_light_bag_files.zip
