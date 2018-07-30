@@ -14,8 +14,9 @@
   margin-top: 5px;
 }
 
-.custom-icon {
+.icon-custom {
   background: url("/icon/if_windmill_576976.png");
+  position: absolute;
   left: -40px;
   margin-top: 5px;
 }
