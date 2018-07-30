@@ -2,6 +2,7 @@
 layout: page
 title: About me
 subtitle: under construction
+css: "/css/aboutme.css"
 ---
 
 <div id="aboutme-section">
