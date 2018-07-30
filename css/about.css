@@ -16,6 +16,8 @@
 
 .custom-icon {
   background: url("/icon/if_windmill_576976.png");
+  left: -40px;
+  margin-top: 5px;
 }
 
 #aboutme-section p:last-child {
